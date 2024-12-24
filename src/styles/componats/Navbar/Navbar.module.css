@@ -1,0 +1,80 @@
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 2rem;
+    font-family: Arial, sans-serif;
+    background-color: #FFFFFF;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-left: 2rem;
+}
+
+.navLinks {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.navLinks li a {
+    text-decoration: none;
+    color: #00046C;
+    font-size: 0.8rem;
+    transition: color 0.3s;
+}
+
+.navLinks li a:hover {
+    color: #ff4500;
+}
+
+.learningCenter {
+    /* background-color: #ff4500; */
+    color: red;
+    padding: 0.5rem 0.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    border: 1px solid red;
+    margin-right: 2rem;
+}
+
+.hamburger {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.mobileNav {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    z-index: 10;
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .navLinks {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .mobileNav {
+        display: flex;
+    }
+}
